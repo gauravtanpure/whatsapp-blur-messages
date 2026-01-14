@@ -1,0 +1,70 @@
+/* Blur all message content */
+.message-in .copyable-text,
+.message-out .copyable-text,
+.copyable-text span,
+._11JPr,
+._akbu,
+.quoted-mention,
+._ao3e,
+.selectable-text {
+  filter: blur(5px);
+  transition: filter 0.2s ease;
+  user-select: none;
+}
+
+/* Reveal on hover - message bubbles */
+.message-in:hover .copyable-text,
+.message-out:hover .copyable-text,
+.message-in:hover .selectable-text,
+.message-out:hover .selectable-text,
+._11JPr:hover,
+.copyable-text:hover span,
+._akbu:hover,
+.quoted-mention:hover,
+._ao3e:hover {
+  filter: blur(0px);
+  user-select: text;
+}
+
+/* Blur contact names in chat list */
+._8nE1Y,
+.ggj6brxn,
+._21S-L {
+  filter: blur(4px);
+  transition: filter 0.2s ease;
+}
+
+/* Reveal contact names on hover */
+._8nE1Y:hover,
+.ggj6brxn:hover,
+._21S-L:hover {
+  filter: blur(0px);
+}
+
+/* Blur preview text in chat list */
+._1VfKB,
+.l7jjieqr {
+  filter: blur(4px);
+  transition: filter 0.2s ease;
+}
+
+/* Reveal on hover */
+._1VfKB:hover,
+.l7jjieqr:hover {
+  filter: blur(0px);
+}
+
+/* Blur images and media */
+img[src*="blob"],
+img[src*="pps.whatsapp.net"],
+video {
+  filter: blur(10px);
+  transition: filter 0.2s ease;
+}
+
+/* Reveal media on hover */
+img[src*="blob"]:hover,
+img[src*="pps.whatsapp.net"]:hover,
+video:hover {
+  filter: blur(0px);
+}
